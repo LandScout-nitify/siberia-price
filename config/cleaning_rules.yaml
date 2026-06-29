@@ -1,0 +1,10 @@
+rules:
+  exclude_if_area_missing: true
+  exclude_if_area_zero: true
+  exclude_if_cadastral_value_missing: true
+  exclude_if_cadastral_value_zero: true
+  exclude_linear_objects: true
+  exclude_public_roads: true
+  separate_subsoil_large_plots: true
+  duplicate_policy: keep_latest
+  outlier_policy: manual_review_then_winsorize

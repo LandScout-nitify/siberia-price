@@ -1,0 +1,70 @@
+regions:
+  - name: Республика Тыва
+    code: "17"
+    role: base
+    key_locations:
+      - Кызыл
+      - Кызылский кожуун
+      - Ак-Довурак
+      - Шагонар
+      - Чадан
+      - Туран
+
+  - name: Красноярский край
+    code: "24"
+    role: benchmark
+    key_locations:
+      - Красноярск
+      - Ачинск
+      - Канск
+      - Минусинск
+
+  - name: Томская область
+    code: "70"
+    role: benchmark
+    key_locations:
+      - Томск
+      - Северск
+      - Томский район
+
+  - name: Республика Хакасия
+    code: "19"
+    role: benchmark
+    key_locations:
+      - Абакан
+      - Черногорск
+      - Саяногорск
+
+  - name: Республика Алтай
+    code: "04"
+    role: benchmark
+    key_locations:
+      - Горно-Алтайск
+
+  - name: Иркутская область
+    code: "38"
+    role: benchmark
+    key_locations:
+      - Иркутск
+      - Ангарск
+      - Братск
+
+  - name: Кемеровская область - Кузбасс
+    code: "42"
+    role: benchmark
+    key_locations:
+      - Кемерово
+      - Новокузнецк
+
+  - name: Алтайский край
+    code: "22"
+    role: benchmark
+    key_locations:
+      - Барнаул
+      - Бийск
+
+  - name: Новосибирская область
+    code: "54"
+    role: optional
+    key_locations:
+      - Новосибирск
