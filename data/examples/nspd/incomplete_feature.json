@@ -1,0 +1,10 @@
+{
+  "type": "Feature",
+  "id": "SYNTH-NSPD-003",
+  "properties": {
+    "cadastral_number": "SYNTH-NSPD-003",
+    "category": "Земли населённых пунктов",
+    "permitted_use_established_by_document": null
+  },
+  "geometry": null
+}
