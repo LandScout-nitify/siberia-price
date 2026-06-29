@@ -34,7 +34,7 @@
 ```text
 docs/        методология и проектная документация
 config/      регионы, ВРИ, правила очистки
-data/        raw/interim/processed/external данные
+data/        синтетические примеры и raw/interim/processed/external данные
 src/siberia_price/  устанавливаемый Python-пакет
 outputs/     таблицы, карты, графики, отчеты
 app/         будущий Streamlit-дашборд
@@ -65,3 +65,18 @@ python -m pytest
 ```bash
 streamlit run app/streamlit_app.py
 ```
+
+## Пилотная обработка таблицы
+
+Пример содержит только синтетические данные и идентификаторы `SYNTH-*`.
+Пайплайн не выполняет запросы к НСПД.
+
+```bash
+python -m siberia_price.pipeline.process_land_table \
+  --input data/examples/industrial_land_sample.csv \
+  --output data/processed/industrial_land_sample_processed.parquet
+```
+
+Результат сохраняется в Parquet. Строки с нулевой или некорректной площадью
+либо кадастровой стоимостью сохраняются с признаком
+`data_quality_status=invalid`, но без рассчитанной КС 1 м².
