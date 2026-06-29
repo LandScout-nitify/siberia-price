@@ -22,7 +22,8 @@
 | location_type | string | тип локации |
 | lat | float | широта |
 | lon | float | долгота |
-| geometry | geometry | геометрия участка |
+| geometry | geometry или JSON string | геометрия участка; в processed Parquet из raw-папки хранится как JSON-строка |
+| raw_file | string, nullable | имя исходного raw JSON для трассировки записи |
 | distance_city_center_km | float | расстояние до центра города |
 | distance_road_km | float | расстояние до автодороги |
 | distance_rail_km | float | расстояние до железной дороги |
